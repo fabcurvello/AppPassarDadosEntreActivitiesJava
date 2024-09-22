@@ -3,12 +3,15 @@ package com.example.passardadosentreactivities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class SegundaActivity extends AppCompatActivity {
 
     private TextView tvIdade;
     private TextView tvResposta;
+    private Button btRetornar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +20,7 @@ public class SegundaActivity extends AppCompatActivity {
 
         tvIdade = findViewById(R.id.tvIdade);
         tvResposta = findViewById(R.id.tvReposta);
+        btRetornar = findViewById(R.id.bt_retornar);
 
         //Recuperar os dados que foram enviados pela intent
         Bundle dados = getIntent().getExtras();
@@ -31,6 +35,13 @@ public class SegundaActivity extends AppCompatActivity {
         } else {
             tvResposta.setText("Você é maior de idade");
         }
+
+        btRetornar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // Encerra esta Activity
+            }
+        });
 
     }
 }

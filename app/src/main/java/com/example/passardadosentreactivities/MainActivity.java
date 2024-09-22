@@ -45,10 +45,13 @@ public class MainActivity extends AppCompatActivity {
 
                 //Iniciar a intent.
                 startActivity(intent);
-
-
-
             }
         });
+    } // fim do onCreate()
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        etIdade.setText("");  // Limpa o texto do EditText quando esta Activity é recarregada
     }
 }
