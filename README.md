@@ -48,7 +48,6 @@ Exercício aplicado em sala de aula, usado como prática guiada com os alunos.
 Outros repositórios de aula com o mesmo tema:
 
 - [AppPassarDadosEntreActivitiesAnimaUNA](https://github.com/fabcurvello/AppPassarDadosEntreActivitiesAnimaUNA)
-- [AppPassarDadosEntreActivitiesAnima](https://github.com/fabcurvello/AppPassarDadosEntreActivitiesAnima)
 - [AppPassarDadosEntreActivities](https://github.com/fabcurvello/AppPassarDadosEntreActivities)
 
 ## Autor
